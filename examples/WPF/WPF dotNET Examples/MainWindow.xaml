@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPF_dotNET_Examples.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_dotNET_Examples"
+        mc:Ignorable="d"
+        Title="WPF dotNET Example" Height="450" Width="703"
+        Loaded = "Page_Loaded">
+    <Grid>
+        <Button Name="btnLaunchEngine" Content="Launch engine" HorizontalAlignment="Left" Margin="9,89,0,0" VerticalAlignment="Top" Width="101" Height="32" Click="Launch_engine_Click"/>
+        <Button Name="btnOpenInspection" Content="Open Inspection" HorizontalAlignment="Left" Margin="9,126,0,0" VerticalAlignment="Top" Width="101" Height="32" Click="Open_inspection_Click"/>
+        <Button Name="btnInspect" Content="Inspect" HorizontalAlignment="Left" Margin="9,163,0,0" VerticalAlignment="Top" Width="101" Height="32" Click="Inspect_Click"/>
+        <Button Name="btnQuit" Content="Quit" HorizontalAlignment="Left" Margin="9,200,0,0" VerticalAlignment="Top" Width="101" Height="32" Click="Quit_Click"/>
+        <WindowsFormsHost x:Name="wfhost" HorizontalAlignment="Right" Width="400" Height="400" VerticalAlignment="Bottom" Background="White" Margin="0,0,10,9"/>
+        <TextBox Name="txtInspectionName" HorizontalAlignment="Left" Height="32" Margin="122,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Inspection Name" HorizontalAlignment="Left" Margin="122,100,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="rdbInspectionPass" Content="Inspection Pass" HorizontalAlignment="Left" Margin="122,172,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
